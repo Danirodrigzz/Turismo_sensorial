@@ -1,0 +1,102 @@
+// Paleta azul y gris
+$primary: #1e3a8a;   // azul fuerte
+$secondary: #3b82f6; // azul brillante
+$light: #f1f5f9;     // gris muy claro
+$dark: #334155;      // gris oscuro
+$card: #e2e8f0;      // gris suave
+
+.experiencia-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: $light;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  font-family: "Segoe UI", sans-serif;
+  color: $dark;
+
+  .title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: $primary;
+    margin-bottom: 20px;
+    border-bottom: 3px solid $secondary;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    color: $secondary;
+    margin-bottom: 10px;
+  }
+
+  .narracion,
+  .sonidos {
+    margin: 25px 0;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  audio {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .sonido-card {
+    background: $card;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease, background 0.2s ease;
+
+    p {
+      margin: 0 0 8px 0;
+      font-weight: bold;
+      color: $dark;
+    }
+
+    &:hover {
+      background: lighten($card, 5%);
+      transform: translateY(-2px);
+    }
+  }
+
+  .acciones {
+    text-align: center;
+    margin-top: 30px;
+
+    button {
+      background: linear-gradient(90deg, $primary, $secondary);
+      color: white;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      }
+    }
+  }
+}
+
+.error-box {
+  max-width: 600px;
+  margin: 60px auto;
+  text-align: center;
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 20px;
+  border-radius: 10px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}

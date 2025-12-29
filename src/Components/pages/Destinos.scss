@@ -1,0 +1,115 @@
+:root{
+       --PrimaryColor: hsl(199, 100%, 33%);  
+       --SecondaryColor: hsl(187, 85%, 43%);
+       --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+       --whiteColor: hsl(0, 0%, 100%);
+       --blackColor: hsl(201, 33%, 16%);
+       --textColor: hsl(240, 4%, 36%);
+       --whiteColorDeam: hsl(0, 0%, 93%);
+       --greyText: rgb(190, 190, 190);
+       --inputColor: rgb(239, 239, 239);
+       --bodyColor: rgb(240, 240, 246);
+       --cardBG: rgb(225, 225, 235);
+       --cardHover: rgb(255, 255, 255);
+} 
+
+
+
+.destinos-section {
+  padding: 40px;
+  text-align: center;
+  background: var(--whiteColorDeam);
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--textColor); 
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--blackColor); 
+  margin-bottom: 30px;
+}
+
+.destinos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+           height: 100%;
+            display: grip;
+            row-gap: 10px;
+           //padding: 1rem;
+            border-radius: 10px;
+            align-items: center;
+            background: var(--cardBG);
+            box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+            overflow: hidden;
+            text-decoration: none;
+                 &:hover{
+                background: var(--cardHover);
+                box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+                transition: .3s ease;}
+            
+}
+
+             .card img {
+              width: 100%;
+              height: 180px;
+             object-fit: hidden;
+
+                img{
+                height: 100%;
+                width: 180%;
+                object-fit: cover;
+                transition: 2s ease;
+               }
+
+               
+               &:hover{
+                img{
+                    transform: scale(1.1);
+                 }
+               }
+
+ 
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  color: var(--blackColor);
+}
+
+  .icon{
+                align-self: center;
+                font-size: 18px;
+            }
+          
+
+            
+            .continent{
+                gap: .5rem;
+
+                .icon{
+                    color: var(--textColor);
+                    font-size: 18px;
+                }
+
+
+                p {
+
+                    color: var(--textColor);
+                    font-weight: 400;
+                    font-size: 14px;
+                    
+                }
+             }
+
+          
