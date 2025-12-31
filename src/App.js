@@ -9,7 +9,7 @@ import React from 'react';
 // import ExperienciaVisual from "./pages/ExperienciaVisual";
 
 // Login
-import Auth from "./login/Auth";
+// import Auth from "./login/Auth";
 
 // Estilos
 import './app.css';
@@ -27,7 +27,7 @@ const App = () => {
       <Navbar />
       <HomeComponent />
       <Main />
-      <Auth />
+      {/* <Auth /> */}
       <Footer />
     </>
   );
