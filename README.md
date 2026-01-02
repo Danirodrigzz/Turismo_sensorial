@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# 🌍 Turismo Sensorial
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Bienvenido a **Turismo Sensorial**! Una aplicación web diseñada para transformar la forma en que experimentas los viajes, ofreciendo una inmersión profunda a través de experiencias visuales y auditivas de diversos destinos turísticos.
 
-## Available Scripts
+## 📖 Descripción
 
-In the project directory, you can run:
+Este proyecto busca conectar a los viajeros con sus destinos de una manera única, permitiéndoles explorar lugares no solo a través de imágenes, sino también mediante sonidos y narrativas envolventes. La plataforma está construida para ser intuitiva, visualmente atractiva y altamente interactiva.
 
-### `npm start`
+## ✨ Características Principales
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Exploración Inmersiva**: Descubre destinos a través de galerías visuales y experiencias auditivas.
+- **Interfaz Dinámica**: Animaciones fluidas al navegar y desplazarse (scroll) para una experiencia de usuario premium.
+- **Gestión de Destinos**: Información detallada sobre lugares turísticos.
+- **Autenticación de Usuarios**: (En desarrollo) Inicio de sesión seguro para guardar favoritos y personalizar la experiencia.
+- **Diseño Responsivo**: Adaptado perfectamente para móviles, tablets y escritorio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tecnologías Utilizadas
 
-### `npm test`
+Este proyecto utiliza un stack moderno y eficiente:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**:
+  - [React](https://reactjs.org/) (v19) - Biblioteca principal para la interfaz de usuario.
+  - [React Router](https://reactrouter.com/) - Para la navegación entre páginas.
+  - [SASS](https://sass-lang.com/) - Preprocesador CSS para estilos modulares y avanzados.
+  - [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) - Para animaciones al hacer scroll.
+  - [React Icons](https://react-icons.github.io/react-icons/) - Iconografía moderna y escalable.
 
-### `npm run build`
+- **Backend & Servicios**:
+  - [Supabase](https://supabase.com/) - Base de datos en tiempo real y autenticación.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Instalación y Configuración
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Clonar el repositorio**
+    ```bash
+    git clone https://github.com/Danirodrigzz/Turismo_sensorial.git
+    cd Turismo_sensorial
+    ```
 
-### `npm run eject`
+2.  **Instalar dependencias**
+    ```bash
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3.  **Configurar variables de entorno**
+    Crea un archivo `.env` en la raíz del proyecto basándote en el archivo `.env.example`. Asegúrate de incluir tus credenciales de Supabase:
+    ```env
+    REACT_APP_SUPABASE_URL=tu-url-de-supabase
+    REACT_APP_SUPABASE_ANON_KEY=tu-anon-key-de-supabase
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4.  **Iniciar el servidor de desarrollo**
+    ```bash
+    npm start
+    ```
+    La aplicación se abrirá automáticamente en [http://localhost:3000](http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📂 Estructura del Proyecto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+travel/
+├── public/           # Archivos estáticos
+├── src/
+│   ├── Components/   # Componentes reutilizables (Navbar, Footer, etc.)
+│   ├── login/        # Componentes de autenticación
+│   ├── pages/        # Páginas principales (Home, Destinos, etc.)
+│   ├── services/     # Configuración de servicios externos (Supabase)
+│   ├── App.js        # Componente raíz
+│   ├── index.js      # Punto de entrada
+│   └── ...
+├── .env              # Variables de entorno (NO subir al repo)
+└── package.json      # Dependencias y scripts
+```
 
-## Learn More
+## 🤝 Contribución
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1.  Haz un Fork del repositorio.
+2.  Crea una rama para tu feature (`git checkout -b feature/NuevaCaracteristica`).
+3.  Haz commit de tus cambios (`git commit -m 'Agrega nueva característica'`).
+4.  Haz push a la rama (`git push origin feature/NuevaCaracteristica`).
+5.  Abre un Pull Request.
 
-### Code Splitting
+## 📄 Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+Diseñado y desarrollado con ❤️ por [Danirodrigzz](https://github.com/Danirodrigzz).
